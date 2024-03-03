@@ -1,0 +1,36 @@
+import React from "react";
+import styles from "./styles.module.css";
+import background from "../../assets/images/pexels-photo-288100.png";
+import logo from "../../assets/images/Logo.png";
+import spotifyLogo from "../../assets/images/Spotify_logo_without_text.svg";
+import linkedinLogo from "../../assets/images/LinkedIn_icon_circle.svg";
+import MailIcon from "../../assets/images/mailicon.svg";
+
+export default function HomePage() {
+  return (
+    <div className={styles.viewport}>
+      <div className={styles.splashScreen}>
+        <img className={styles.splashScreenLogo} src={logo} />
+      </div>
+      <div className={styles.perspectiveDiv}>
+        <div className={styles.mainContainer}>
+          <div className={styles.ajedrez}>
+            <img className={styles.backgroundImg} src={background} />
+            <img className={styles.logo} src={logo} alt="" />
+          </div>
+          <div className={styles.sideButtons}>
+            <button className={styles.sideButton}>
+              <img className={styles.icon} src={spotifyLogo} alt="" />
+            </button>
+            <button className={styles.sideButton}>
+              <img className={styles.icon} src={linkedinLogo} alt="" />
+            </button>
+            <button className={styles.sideButton}>
+              <img className={styles.icon} src={MailIcon} alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
