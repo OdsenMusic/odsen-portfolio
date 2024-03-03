@@ -22,13 +22,21 @@
   left: 50%;
   border: 1px solid red;
 
-  height: 5000px;
-  width: 5000px;
+  height: 3000px;
+  width: 3000px;
   display: flex;
   align-items: center;
   justify-content: center;
   animation: introAnimation 2s;
   animation-delay: 1.5s;
+
+  background-image: url(../../assets/images/pexels-photo-white.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.perspectiveDiv::before {
+  filter: blur(50px);
 }
 
 .ajedrez {
@@ -113,9 +121,6 @@
   transform: translateX(-20px) translateY(-20px);
 }
 
-.ajedrez:hover > .backgroundImg {
-}
-
 .splashScreen {
   background-color: black;
   height: 100vh;
@@ -130,6 +135,9 @@
 
 .splashScreenLogo {
   height: 200px;
+  opacity: 0;
+  animation: logoAnimation 2s;
+  /* animation-delay: 0.8s; */
 }
 
 .icon:hover {
@@ -167,5 +175,15 @@
   }
   to {
     opacity: 0;
+  }
+}
+
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
