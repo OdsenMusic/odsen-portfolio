@@ -119,14 +119,11 @@
   background-image: url(../../assets/images/pexels-photo-white.jpg);
   background-repeat: no-repeat;
   background-size: auto;
-  filter: blur(0);
 
   box-shadow: inset -371px -232px 2118px 447px rgb(47 81 128 / 26%),
     inset -52px -126px 2598px 447px rgb(52 84 121 / 74%),
     inset 526.3px -72px 2578px 447px rgb(236 246 253 / 45%),
     inset 606.5px 1248px 2578px 447px rgb(164 209 255 / 15%);
-
-  filter: drop-shadow();
 }
 
 .text {
@@ -138,21 +135,6 @@
   top: 300px;
   left: 300px;
   gap: 70px;
-
-  /* font-weight: 200;
-  opacity: 1;
-  transition: 0.3s;
-  width: fit-content;
-  padding: 20px;
-  border-radius: 50px;
-
-  background-image: linear-gradient(135deg, #f3f9ff 25%, transparent 25%),
-    linear-gradient(225deg, #f3f9ff 25%, transparent 25%),
-    linear-gradient(45deg, #f3f9ff 25%, transparent 25%),
-    linear-gradient(315deg, #f3f9ff 25%, #ffffff 25%);
-  background-position: 10px 0, 10px 0, 0 0, 0 0;
-  background-size: 10px 10px;
-  background-repeat: repeat; */
 }
 
 .ajedrez {
@@ -164,7 +146,6 @@
   width: 400px;
   border-radius: 50px;
   transform: translateX(-18px) translateY(-31px) scale(1.03);
-  /* box-shadow: inset -70px -72px 166px -23px rgba(0, 0, 0, 0.27); */
 }
 
 .projectButton {
@@ -182,11 +163,6 @@
   transition: 0.3s;
   box-shadow: 27px 23px 19px -7px rgba(0, 27, 67, 0.503),
     38px 83px 105px -14px rgba(0, 21, 51, 0.503);
-}
-
-.ajedrez:hover ~ .text {
-  transform: translateX(-20px) translateY(-20px);
-  opacity: 1;
 }
 
 .mainContainer {
@@ -209,14 +185,11 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* height: 350px; */
-  width: 600px;
-  /* align-self: flex-end; */
-  gap: 70px;
+  width: 550px;
+  gap: 40px;
   background-color: white;
   box-shadow: 30px 30px 60px 0 rgba(0, 0, 0, 0.322);
   border-radius: 50px;
-  /* padding: 30px; */
   background-color: #ffffff;
   opacity: 1;
   background-image: linear-gradient(135deg, #f3f9ff 25%, transparent 25%),

@@ -1,0 +1,28 @@
+.viewport {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/images/pexels-photo-white.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mainContainer {
+  top: 70px;
+  width: 85%;
+  height: 85%;
+  background-color: #ffffff76;
+  border-radius: 50px;
+  backdrop-filter: blur(13px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 50px;
+  padding-top: 50px;
+}

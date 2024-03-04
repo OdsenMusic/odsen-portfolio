@@ -21,7 +21,7 @@ export default function HomePage() {
     function hideSplashScreen() {
       setTimeout(() => {
         setIsLoading(false);
-      }, 4000);
+      }, 2500);
     }
 
     hideSplashScreen();
@@ -99,24 +99,11 @@ export default function HomePage() {
       >
         {popupText}
       </p>
-      {/* <p
-        style={{
-          position: "fixed",
-          height: "300px",
-          width: "300px",
-          backgroundColor: "red",
-          top: `${JSON.stringify(mousePosition.y)}px`,
-          left: `${JSON.stringify(mousePosition.x)}px`,
-          zIndex: "9999999999",
-        }}
-      >
-        {popupText} {JSON.stringify(mousePosition.y)}
-      </p> */}
-      {isLoading && (
+      {/* {isLoading && (
         <div className={styles.splashScreen}>
           <img className={styles.splashScreenLogo} src={logo} />
         </div>
-      )}{" "}
+      )}{" "} */}
       <div className={styles.perspectiveDiv}>
         <div className={styles.mainContainer}>
           <div className={styles.sideButtons}>
