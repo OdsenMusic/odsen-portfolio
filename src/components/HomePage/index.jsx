@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.css";
-import background from "../../assets/images/pexels-photo-288100.png";
+import background from "../../assets/images/Sin título-1.jpg";
 import logo from "../../assets/images/Logo.png";
 import spotifyLogo from "../../assets/images/Spotify_logo_without_text.svg";
 import linkedinLogo from "../../assets/images/LinkedIn_icon_circle.svg";
