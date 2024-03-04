@@ -6,6 +6,7 @@ import spotifyLogo from "../../assets/images/Spotify_logo_without_text.svg";
 import linkedinLogo from "../../assets/images/LinkedIn_icon_circle.svg";
 import MailIcon from "../../assets/images/mailicon.svg";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,6 +14,8 @@ export default function HomePage() {
   const [popupText, setPopupText] = useState("");
   const [cursorVariant, setCursorVariant] = useState("default");
   const hoverTimeoutRef = useRef(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     function hideSplashScreen() {
@@ -119,6 +122,9 @@ export default function HomePage() {
           <div className={styles.sideButtons}>
             <div className={styles.ajedrez}>
               <div
+                onClick={() => {
+                  navigate("/projects");
+                }}
                 onMouseLeave={() => mouseOutHandler()}
                 onMouseEnter={() => {
                   mouseInHandler("Projects");
