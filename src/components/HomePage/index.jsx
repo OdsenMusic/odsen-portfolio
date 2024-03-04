@@ -21,32 +21,32 @@ export default function HomePage() {
 
   return (
     <div className={styles.viewport}>
+      <p className={styles.popupText}>Projects</p>
       {isLoading && (
         <div className={styles.splashScreen}>
           <img className={styles.splashScreenLogo} src={logo} />
         </div>
-      )}
-
+      )}{" "}
       <div className={styles.perspectiveDiv}>
         <div className={styles.mainContainer}>
-          <div className={styles.ajedrez}>
-            <p className={styles.text}>Projects</p>
-            <div className={styles.projectButton}>
-              <img className={styles.backgroundImg} src={background} />
-              <img className={styles.logo} src={logo} alt="" />
-            </div>{" "}
-          </div>
-
           <div className={styles.sideButtons}>
-            <button className={styles.sideButton}>
-              <img className={styles.icon} src={spotifyLogo} alt="" />
-            </button>
-            <button className={styles.sideButton}>
-              <img className={styles.icon} src={linkedinLogo} alt="" />
-            </button>
-            <button className={styles.sideButton}>
-              <img className={styles.icon} src={MailIcon} alt="" />
-            </button>
+            <div className={styles.ajedrez}>
+              <div className={styles.projectButton}>
+                <img className={styles.backgroundImg} src={background} />
+                <img className={styles.logo} src={logo} alt="" />
+              </div>{" "}
+            </div>
+            <div className={styles.buttonContainer}>
+              <button className={styles.sideButton}>
+                <img className={styles.icon} src={spotifyLogo} alt="" />
+              </button>
+              <button className={styles.sideButton}>
+                <img className={styles.icon} src={linkedinLogo} alt="" />
+              </button>
+              <button className={styles.sideButton}>
+                <img className={styles.icon} src={MailIcon} alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
