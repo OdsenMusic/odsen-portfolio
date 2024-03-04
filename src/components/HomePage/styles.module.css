@@ -33,13 +33,51 @@
   background-image: url(../../assets/images/pexels-photo-white.png);
   background-repeat: no-repeat;
   background-size: auto;
+  filter: blur(0);
+
+  box-shadow: inset -731px -72px 2578px 447px rgba(0, 0, 0, 0.27),
+    inset -731px -72px 2578px 447px rgba(255, 255, 255, 0.654);
+
+  filter: drop-shadow();
 }
 
-.perspectiveDiv::before {
-  filter: blur(50px);
+.text {
+  font-family: "Montserrat";
+  color: #5781a7;
+  font-size: 2rem;
+  display: flex;
+  position: fixed;
+  top: 300px;
+  left: 300px;
+  gap: 70px;
+
+  /* font-weight: 200;
+  opacity: 1;
+  transition: 0.3s;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 50px;
+
+  background-image: linear-gradient(135deg, #f3f9ff 25%, transparent 25%),
+    linear-gradient(225deg, #f3f9ff 25%, transparent 25%),
+    linear-gradient(45deg, #f3f9ff 25%, transparent 25%),
+    linear-gradient(315deg, #f3f9ff 25%, #ffffff 25%);
+  background-position: 10px 0, 10px 0, 0 0, 0 0;
+  background-size: 10px 10px;
+  background-repeat: repeat; */
 }
 
 .ajedrez {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+  height: 400px;
+  border-radius: 50px;
+  box-shadow: inset -70px -72px 166px -23px rgba(0, 0, 0, 0.27);
+}
+
+.projectButton {
   height: 400px;
   width: 400px;
   border-radius: 50px;
@@ -53,7 +91,12 @@
   justify-content: center;
 
   transition: 0.3s;
-  box-shadow: 30px 30px 60px 0 rgba(0, 0, 0, 0.462);
+  box-shadow: 30px 30px 60px 0 rgba(0, 13, 34, 0.603);
+}
+
+.ajedrez:hover ~ .text {
+  transform: translateX(-20px) translateY(-20px);
+  opacity: 1;
 }
 
 .mainContainer {
@@ -66,6 +109,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* height: 350px; */
+  align-self: flex-end;
   gap: 70px;
   background-color: white;
   box-shadow: 30px 30px 60px 0 rgba(0, 0, 0, 0.322);
@@ -80,6 +125,8 @@
   background-position: 10px 0, 10px 0, 0 0, 0 0;
   background-size: 10px 10px;
   background-repeat: repeat;
+  box-shadow: inset -22px 2px 99px -16px rgba(0, 0, 0, 0.17),
+    30px 30px 60px 0 rgba(0, 13, 34, 0.38);
 }
 
 .sideButton {
@@ -114,11 +161,15 @@
   transition: 0.3s;
 }
 
-.ajedrez:hover {
+.ajedrez:hover > .projectButton {
   cursor: pointer;
 
-  box-shadow: 60px 60px 120px 0 rgba(0, 0, 0, 0.462);
+  box-shadow: 60px 60px 120px 0 rgba(1, 27, 56, 0.616);
   transform: translateX(-20px) translateY(-20px);
+}
+
+.ajedrez:hover {
+  box-shadow: 00px 00px 0px 0 rgba(0, 0, 0, 0);
 }
 
 .splashScreen {
@@ -154,6 +205,7 @@
       translateZ(0);
     --rotate: -15deg;
     opacity: 0;
+    filter: blur(40px);
   }
   to {
     transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)))
@@ -162,6 +214,7 @@
     --rotate: -15deg;
     --x: 0px;
     --y: 0px;
+    filter: blur(0);
   }
 }
 

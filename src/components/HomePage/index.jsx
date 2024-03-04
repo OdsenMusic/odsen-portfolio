@@ -26,12 +26,17 @@ export default function HomePage() {
           <img className={styles.splashScreenLogo} src={logo} />
         </div>
       )}
+
       <div className={styles.perspectiveDiv}>
         <div className={styles.mainContainer}>
           <div className={styles.ajedrez}>
-            <img className={styles.backgroundImg} src={background} />
-            <img className={styles.logo} src={logo} alt="" />
+            <p className={styles.text}>Projects</p>
+            <div className={styles.projectButton}>
+              <img className={styles.backgroundImg} src={background} />
+              <img className={styles.logo} src={logo} alt="" />
+            </div>{" "}
           </div>
+
           <div className={styles.sideButtons}>
             <button className={styles.sideButton}>
               <img className={styles.icon} src={spotifyLogo} alt="" />
