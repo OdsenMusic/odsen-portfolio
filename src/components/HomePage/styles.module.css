@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(220, 228, 233);
+  overflow: hidden;
 }
 
 .cursor {
