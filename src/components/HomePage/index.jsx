@@ -76,7 +76,12 @@ export default function HomePage() {
   };
 
   return (
-    <div className={styles.viewport}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ ease: "easeOut", duration: 1, delay: 0.1 }}
+      className={styles.viewport}
+    >
       <motion.div
         style={{
           top: `calc(${JSON.stringify(mousePosition.y)}px + 9px`,
@@ -99,11 +104,11 @@ export default function HomePage() {
       >
         {popupText}
       </p>
-      {isLoading && (
+      {/* {isLoading && (
         <div className={styles.splashScreen}>
           <img className={styles.splashScreenLogo} src={logo} />
         </div>
-      )}{" "}
+      )}{" "} */}
       <div className={styles.perspectiveDiv}>
         <div className={styles.mainContainer}>
           <div className={styles.sideButtons}>
@@ -157,6 +162,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

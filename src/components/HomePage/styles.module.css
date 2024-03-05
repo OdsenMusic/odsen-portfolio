@@ -113,8 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: introAnimation 1s;
-  animation-delay: 0.3s;
+  /* animation: introAnimation 1s;
+  animation-delay: 0.3s; */
 
   transition: 0.5s;
   background-image: url(../../assets/images/pexels-photo-white.jpg);
@@ -255,13 +255,13 @@
   justify-content: center;
   z-index: 100;
   opacity: 0;
-  animation: splashScreenAnimation 0.7s;
+  /* animation: splashScreenAnimation 0.7s; */
 }
 
 .splashScreenLogo {
   height: 200px;
   opacity: 0;
-  animation: logoAnimation 0.6s;
+  /* animation: logoAnimation 0.6s; */
   /* animation-delay: 0.8s; */
 }
 
