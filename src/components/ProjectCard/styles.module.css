@@ -87,3 +87,16 @@
   filter: saturate(1);
   scale: 1.05;
 }
+
+@media only screen and (max-width: 850px) {
+  .fullContainer {
+    flex-direction: column;
+    height: fit-content;
+    min-width: fit-content;
+  }
+
+  .textContainer {
+    padding: 30px;
+    width: 85%;
+  }
+}

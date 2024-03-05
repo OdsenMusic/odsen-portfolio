@@ -113,8 +113,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animation: introAnimation 2s; */
-  animation-delay: 1.5s;
+  animation: introAnimation 1s;
+  animation-delay: 0.3s;
 
   transition: 0.5s;
   background-image: url(../../assets/images/pexels-photo-white.jpg);
@@ -255,13 +255,13 @@
   justify-content: center;
   z-index: 100;
   opacity: 0;
-  animation: splashScreenAnimation 2s;
+  animation: splashScreenAnimation 0.7s;
 }
 
 .splashScreenLogo {
   height: 200px;
   opacity: 0;
-  animation: logoAnimation 2s;
+  animation: logoAnimation 0.6s;
   /* animation-delay: 0.8s; */
 }
 
@@ -273,12 +273,11 @@
 
 @keyframes introAnimation {
   from {
-    transform: translate(calc(-55% + var(--x)), calc(-55% + var(--y)))
+    transform: translate(calc(-52% + var(--x)), calc(-52% + var(--y)))
       skewX(-48deg) skewY(22deg) scaleX(2) scale(0.5421875) rotate(-20deg)
-      translateZ(0);
+      translateZ(0) scale(1.2);
     --rotate: -15deg;
     opacity: 0;
-    filter: blur(40px);
   }
   to {
     transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y)))
@@ -287,7 +286,6 @@
     --rotate: -15deg;
     --x: 0px;
     --y: 0px;
-    filter: blur(0);
   }
 }
 

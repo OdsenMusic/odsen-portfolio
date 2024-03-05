@@ -21,7 +21,7 @@ export default function HomePage() {
     function hideSplashScreen() {
       setTimeout(() => {
         setIsLoading(false);
-      }, 2500);
+      }, 800);
     }
 
     hideSplashScreen();
@@ -123,7 +123,8 @@ export default function HomePage() {
               </div>{" "}
             </div>
             <div className={styles.buttonContainer}>
-              <button
+              <a
+                href="https://open.spotify.com/intl-es/artist/5u9LEu640uGxBEKnU1PY9V"
                 className={styles.sideButton}
                 onMouseLeave={() => mouseOutHandler()}
                 onMouseEnter={() => {
@@ -131,8 +132,9 @@ export default function HomePage() {
                 }}
               >
                 <img className={styles.icon} src={spotifyLogo} alt="" />
-              </button>
-              <button
+              </a>
+              <a
+                href="https://www.linkedin.com/in/joel-oliver-millan/"
                 onMouseLeave={() => mouseOutHandler()}
                 onMouseEnter={() => {
                   mouseInHandler("LinkedIn");
@@ -140,8 +142,9 @@ export default function HomePage() {
                 className={styles.sideButton}
               >
                 <img className={styles.icon} src={linkedinLogo} alt="" />
-              </button>
-              <button
+              </a>
+              <a
+                href="mailto:jolivermillan@gmail.com"
                 onMouseLeave={() => mouseOutHandler()}
                 onMouseEnter={() => {
                   mouseInHandler("Email");
@@ -149,7 +152,7 @@ export default function HomePage() {
                 className={styles.sideButton}
               >
                 <img className={styles.icon} src={MailIcon} alt="" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
