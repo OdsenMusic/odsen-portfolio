@@ -1,30 +1,63 @@
 .fullContainer {
   display: flex;
-  flex-direction: column;
+
   gap: 20px;
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 700px;
-  height: 300px;
+  width: fit-content;
+  margin: 30px;
+  background-image: url(../../assets/images/pexels-photo-white-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-radius: 50px;
+  height: 200px;
+}
+
+.subtitle {
+  font-weight: 500;
+}
+
+.textContainer {
+  font-family: "Montserrat";
+  color: rgb(3, 3, 3);
+  font-weight: 200;
+  width: 50%;
+  padding: 30px;
 }
 
 .mainContainer {
-  background-color: white;
   border-radius: 50px;
-  overflow: hidden;
+  overflow: visible;
   width: 80%;
-  height: 300px;
+  height: 200px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.152);
   border: 2px solid white;
+  width: 350px;
+  position: relative;
+}
+
+.imgContainer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+  height: 200px;
+  top: -10px;
+  object-fit: cover;
+}
+
+.link {
+  height: 200px;
 }
 
 .projectTitle {
   font-family: "Montserrat";
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgb(113, 113, 113);
   font-weight: 100;
   text-align: left;
@@ -36,17 +69,18 @@
   border-radius: 50px;
   position: absolute;
   top: -30px;
-  left: 120px;
+  left: 11%;
   z-index: 99;
 }
 
 .projectImg {
   width: 100%;
+  height: 100%;
   border-radius: 50px;
   object-fit: cover;
   filter: saturate(0);
   transition: 0.3s;
-  transform: translateY(20px);
+  /* transform: translateY(20px); */
 }
 
 .projectImg:hover {

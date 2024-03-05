@@ -1,5 +1,6 @@
 .viewport {
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   width: 100%;
   background-image: url(../../assets/images/pexels-photo-white.jpg);
   background-repeat: no-repeat;
@@ -7,22 +8,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  box-shadow: inset -1px 0px 71px 40px rgb(47 81 128 / 26%);
+  overflow: hidden;
+}
+
+.cursor {
+  background-color: #ffffffa9;
+  height: 15px;
+  width: 15px;
+  border: 2px solid white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 100%;
+  z-index: 99;
+  user-select: none;
+  pointer-events: none;
 }
 
 .mainContainer {
   top: 70px;
   width: 85%;
-  height: 85%;
-  background-color: #ffffff76;
-  border-radius: 50px;
-  backdrop-filter: blur(13px);
 
+  background-color: #ffffff76;
+  border-radius: 50px 50px 0 0;
+  backdrop-filter: blur(13px);
+  height: fit-content;
+  min-height: calc(100vh - 90px);
   display: flex;
   align-items: center;
   justify-content: center;
   /* flex-direction: column; */
   flex-wrap: wrap;
-  gap: 50px;
-  padding-top: 50px;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 20px;
+  max-width: 900px;
+  margin-top: 50px;
 }
